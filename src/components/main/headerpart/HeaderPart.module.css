@@ -1,0 +1,59 @@
+.header {
+  padding-left: 64px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 72px;
+  position: sticky;
+  background-color: #f2f4f7;
+  border-bottom: 1px solid #f2f4f7;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 450px;
+}
+
+.travelTrucks {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.travel {
+  color: #101828;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.trucks {
+  color: #475467;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.link {
+  color: #101828;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.active {
+  color: #d84343;
+  cursor: pointer;
+  text-decoration: none;
+}

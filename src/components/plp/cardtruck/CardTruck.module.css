@@ -1,0 +1,56 @@
+.card {
+  width: 888px;
+  height: 368px;
+  border-radius: 20px;
+  border: 1px solid #dadde1;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.photoOfVan {
+  width: 292px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerOfCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blockButtonShowMore {
+  padding-top: 20px;
+}
+
+.buttonShowMore {
+  width: 166px;
+  height: 56px;
+  border-radius: 200px;
+  border: none;
+  background-color: #E44848;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.buttonShowMore:hover {
+  background-color: #D84343;
+}
+
+
+

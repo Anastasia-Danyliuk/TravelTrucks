@@ -1,0 +1,53 @@
+.wrapperForReview {
+    width: 631px;
+}
+
+.horisontal {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #F2F4F7;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.firstLetterOfName {
+    font-weight: 600;
+    font-size: 24px;
+    color: #E44848;
+}
+
+.name {
+    font-weight: 500;
+    color: #101828;
+}
+
+.reting {
+    padding-top: 4px;
+}
+
+.wrapperForReviewText {
+    padding-top: 16px;
+    padding-bottom: 44px;
+}
+
+.reviewText {
+    color: #475467;
+}
+
+.gold {
+    width: 16px;
+    height: 16px;
+}
+
+.grey {
+    width: 16px;
+    height: 16px;
+}

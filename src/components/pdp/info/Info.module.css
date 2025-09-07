@@ -1,0 +1,36 @@
+.featuresBlock {
+    width: 631px;
+    min-width: 631px;
+    height: 588px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 10px;
+    padding-bottom: 44px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.property {
+    font-weight: 500;
+    font-size: 16px;
+    color: #101828;
+}
+
+.headerOfFeatures {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #DADDE1;
+    margin-top: 100px;
+}

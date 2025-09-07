@@ -1,0 +1,93 @@
+.form {
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  width: 641px;
+  height: 588px;
+}
+
+.headerOfForm {
+  padding-left: 57px;
+  padding-top: 44px;
+}
+
+.textUnderHeader {
+  padding-top: 8px;
+}
+
+.inputs {
+  padding-left: 57px;
+  padding-top: 24px;
+}
+
+.wrapperForInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inputField {
+  width: 527px;
+  height: 60px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+.input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding-left: 18px;
+}
+
+.inputComent {
+  width: 527px;
+  height: 60px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  height: 118px;
+  
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton {
+  width: 166px;
+  height: 56px;
+  background-color: #E44848;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 200px;
+}
+
+.submitButton:hover {
+  background-color: #D84343;
+}
+
+.inputFieldCalendar {
+  width: 527px;
+  height: 60px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.inputCalendar {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding-left: 18px;
+}

@@ -1,0 +1,121 @@
+.catalogId {
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+.price {
+  padding-top: 16px;
+}
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.galleryImage {
+  width: 292px;
+  height: 312px;
+  border-radius: 10px;
+}
+
+.description {
+    padding-top: 28px;
+}
+
+.textOfDescription {
+    color: #475467;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.FeaturesAndForm {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 44px;
+}
+
+.hendlerFeaturesAndReviews {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  border-bottom: 1px solid #DADDE1;
+  padding-bottom: 0;
+  margin-bottom: 24px;
+  padding-top: 60px;
+}
+
+.hendlerFeaturesAndReviews h3 {
+  cursor: pointer;
+  padding-bottom: 24px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.hendlerFeaturesAndReviews h3.activeTab {
+  border-bottom: 5px solid red;
+  margin-bottom: -3px;
+}
+
+.features {
+  cursor: pointer;
+}
+
+.reviews {
+  cursor: pointer;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+  animation: rotate 1s linear infinite
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite;
+}
+
+.loader::after {
+  transform: rotate3d(90, 90, 0, 180deg);
+  border-color: #FF3D00;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+  }
+
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+  }
+
+  75%,
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+  }
+}

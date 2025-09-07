@@ -1,0 +1,52 @@
+.wrapperOfVehicleEquipment {
+    width: 360px;
+    height: 272px;
+}
+
+.wrapperForHeader {
+    border-bottom: 1px solid #DADDE1;
+}
+
+.headerOfVehicleEquipment {
+    font-weight: 600;
+    font-size: 20px;
+    color: #101828;
+    padding-bottom: 24px;
+}
+
+.wrapperForFilterIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+
+.buttonOfFilter {
+    width: 112px;
+    height: 96px;
+    border-radius: 12px;
+    border: 1px solid #DADDE1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5px;
+    cursor: pointer;
+}
+
+.textInFilterButton {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.5%;
+    text-align: center;
+}
+
+.iconForVehicleEquipment {
+    width: 32px;
+    height: 32px;
+}
+
+.buttonOfFilter.active {
+    border: 1px solid #E44848;
+}

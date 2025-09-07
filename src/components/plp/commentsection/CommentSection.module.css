@@ -1,0 +1,28 @@
+.blockReitingRevieusLocation {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.svgReiting {
+    width: 16px;
+    height: 16px;
+}
+
+.raitingString {
+    color: #101828;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 4px;
+    padding-right: 16px;
+}
+
+.iconOfMap {
+    width: 16px;
+    height: 16px;
+}
+
+.location {
+    padding-left: 4px;
+}
