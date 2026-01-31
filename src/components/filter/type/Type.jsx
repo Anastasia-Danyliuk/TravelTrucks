@@ -4,7 +4,8 @@ import { toggleForm } from "../../../redux/vansSlice.js";
 
 function Type() {
   const dispatch = useDispatch();
-  const { forms } = useSelector((state) => state.vans.filters);
+    const tempFilters = useSelector((state) => state.vans.temporaryFilters);
+    const forms = tempFilters.forms;
 
   const vehicleTypes = [
     { key: "panelTruck", label: "Van", icon: "icon-bi_grid-1x2" },

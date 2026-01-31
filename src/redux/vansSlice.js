@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchVans } from "./operations";
 
+
 const initialFilters = {
     AC: false,
     TV: false,
@@ -40,8 +41,8 @@ const vansSlice = createSlice({
         },
         toggleForm: (state, action) => {
             const formType = action.payload;
-            const forms = state.filters.forms;
-            state.filters.forms = forms.includes(formType)
+            const forms = state.temporaryFilters.forms;
+            state.temporaryFilters.forms = forms.includes(formType)
                 ? forms.filter((f) => f !== formType)
                 : [...forms, formType];
         },
@@ -127,6 +128,7 @@ export const selectIsLoading = (state) => state.vans.isLoading;
 export const selectError = (state) => state.vans.error;
 export const selectFavorites = (state) => state.vans.favorites;
 export const selectFilteredVans = (state) => state.vans.filteredVans;
+export const selectFilters = (state) => state.vans.filters;
 
 export const selectVanById = (state, id) => {
     return state.vans.items.find((van) => van.id === id);
