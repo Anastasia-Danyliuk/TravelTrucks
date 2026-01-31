@@ -2,15 +2,27 @@
     width: 888px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
     padding-left: 64px;
+}
+
+.truckList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.truckListItem {
+    width: 100%;
 }
 
 .blockLoadMoreButton {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 64px;
 }
 
 .loadMoreButton {
@@ -21,7 +33,7 @@
     border: 1px solid #DADDE1;
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0,5%;
+    letter-spacing: -0.5%;
     color: #101828;
     cursor: pointer;
 }

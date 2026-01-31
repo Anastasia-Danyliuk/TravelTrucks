@@ -26,20 +26,20 @@ function Type() {
           <h3 className={css.headerOfVehicleType}>Vehicle type</h3>
         </div>
 
-        <div className={css.wrapperForFilterIcons}>
-          {vehicleTypes.map(({ key, label, icon }) => (
-              <div
+          <ul className={css.wrapperForFilterIcons}>
+              {vehicleTypes.map(({ key, label, icon }) => (
+              <li
                   key={key}
                   className={`${css.buttonOfFilter} ${forms.includes(key) ? css.active : ""}`}
                   onClick={() => dispatch(toggleForm(key))}
               >
-                <svg className={css.iconForVehicleType}>
-                  <use href={`/icons/symbol-defs.svg#${icon}`} />
-                </svg>
-                <p className={css.textInFilterButton}>{label}</p>
-              </div>
+                  <svg className={css.iconForVehicleType}>
+                      <use href={`/icons/symbol-defs.svg#${icon}`} />
+                  </svg>
+                  <p className={css.textInFilterButton}>{label}</p>
+              </li>
           ))}
-        </div>
+          </ul>
       </div>
   );
 }

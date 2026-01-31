@@ -9,7 +9,7 @@ function CommentSection({ rating, amountOfReviews, location }) {
         <use href="/icons/symbol-defs.svg#icon-Property-1Pressed-1"></use>
       </svg>
       <p className={css.raitingString}>
-        {rating}({amountOfReviews} Reviews)
+          <span className={css.underline}>{rating}({amountOfReviews} Reviews)</span>
       </p>
       <BsMap className={css.iconOfMap} />
       <p className={css.location}>{location}</p>

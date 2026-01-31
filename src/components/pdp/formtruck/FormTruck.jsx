@@ -67,12 +67,13 @@ function Forma() {
                                     onChange={(date) => {
                                         setStartDate(date);
                                         setFieldValue("bookingDate", date);
-                                        setOpen(false);
                                     }}
                                     placeholderText="Booking date*"
                                     className={css.inputCalendar}
-                                    open={open}
+                                    calendarClassName="custom-datepicker"
                                     onClickOutside={() => setOpen(false)}
+                                    calendarStartDay={1}
+                                    formatWeekDay={name => name.substr(0, 3).toUpperCase()}
                                 />
                             </div>
 
